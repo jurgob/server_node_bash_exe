@@ -23,5 +23,8 @@ npm start
 put this on your browser url:
 
 ```bash
-http://localhost:3000/api/run
+http://localhost:3000
 ```
+
+to see the inteface
+
