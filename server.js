@@ -10,9 +10,10 @@ const path = require('path');
 app.listen(port);
 
 app.get("/api/run", (req, res) =>{
-    // let {cmd} = req.query
-
-    const cmd = `echo "hello bash" ; touch /tmp/cazzo`
+    let {macaddr} = req.query
+    
+    // const cmd = `echo "${macaddr}" | wc -c ; echo "${macaddr}"`
+    const cmd = `wakeonlan ${macaddr} -p 7`
     exec(cmd, (error, stdout, stderr) => {
         res.json({
             cmd: `${cmd}`,
