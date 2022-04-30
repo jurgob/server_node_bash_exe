@@ -28,3 +28,16 @@ http://localhost:3000
 
 to see the inteface
 
+## run test
+
+```bash
+npm test
+```
+
+## contribute
+
+I don't enforce anything, so you can push directly into master and break everything.
+
+Just before you push, be sure you run the tests. 
+If the test are already broken, check here: https://github.com/jurgob/server_node_bash_exe/actions to find out who broke stuff.
+
