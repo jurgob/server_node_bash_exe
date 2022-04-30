@@ -21,6 +21,7 @@ app.get("/api/run", (req, res) =>{
     }
     // const cmd = `echo "${macaddr}" | wc -c ; echo "${macaddr}"`
     const cmd = `wakeonlan ${macaddr} -p 7`
+    
     exec(cmd, (error, stdout, stderr) => {
         res.json({
             cmd: `${cmd}`,
