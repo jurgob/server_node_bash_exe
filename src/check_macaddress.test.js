@@ -22,7 +22,7 @@ describe('check NOT VALID Mac address', () => {
         'shutdown;2C:54:91:88:C9:E3',
         'shutdown;2C%3AFD%3AA1%3A59%3A71%3A04%20',
     ].forEach((macaddr) => {
-        test(`${macaddr} is a valid macaddr`, () => {
+        test(`${macaddr} is a an invalid macaddr`, () => {
             expect(isValidMacAddress(macaddr)).toBe(false);
         });
     })
